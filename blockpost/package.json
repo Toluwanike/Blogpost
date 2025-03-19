@@ -77,6 +77,7 @@
     "zod": "^3.23.8"
   },
   "devDependencies": {
+    "next": "^14.0.0",
     "@vitejs/plugin-react": "^4.3.4"
   }
 }
