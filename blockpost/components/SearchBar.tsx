@@ -1,14 +1,16 @@
-'use client';
+"use client";
 
-import { Input } from "@/components/ui/input";
 import { useCallback } from "react";
 import { debounce } from "lodash";
+
+import { Input } from "@/components/ui/input";
 
 interface SearchBarProps {
   onSearch: (query: string) => void;
 }
 
 export function SearchBar({ onSearch }: SearchBarProps) {
+  // Debounce the search to avoid excessive re-renders
   const debouncedSearch = useCallback(
     debounce((value: string) => {
       onSearch(value);

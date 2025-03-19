@@ -1,4 +1,4 @@
-import { Post } from "../types";
+import { Post } from "../lib/types";
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 
 interface PostGridProps {
